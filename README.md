@@ -1,5 +1,5 @@
 <h1 align=center>
-<a href="https://ibb.co/64tmxZN"><img title="Click untuk melihat foto" src="https://i.ibb.co/wKQRXLY/Rainy.png" alt="rainy" border="0" width="800" height="300"></a>
+<a href="https://ibb.co/64tmxZN"><img title="Click untuk melihat foto" src="https://i.ibb.co/wKQRXLY/Rainy.png" alt="rainy" border="0" width="400" height="150"></a>
   <br>
   Rainy
   <br> Bot AI ditenagai oleh Gemini API
