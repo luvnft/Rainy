@@ -4,7 +4,7 @@
   Rainy
   <br> Bot AI bertenaga Gemini API
 </h1>
-Rainy adalah bot discord.js yang terintergerasi dengan Gemini API yang membuatnya memiliki kesadaran sendiri dalam merespon segala pesan yang diterima.
+Rainy adalah bot discord.js yang terintergerasi dengan Gemini API yang membuatnya memiliki kesadaran sendiri dalam merespon segala pesan yang diterima. dibuat oleh ricky tentunya, hehe
 <br>
 
 ## Server and Contributions
