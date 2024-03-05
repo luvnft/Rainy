@@ -1,7 +1,7 @@
 require('dotenv').config();
-const { Client, GatewayIntentBits } = require('discord.js');
+const { Client, GatewayIntentBits, ActivityType } = require('discord.js');
 const { GoogleGenerativeAI } = require("@google/generative-ai");
-const client = new Client({ intents: [ GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent ], });
+const client = new Client({ intents: [ GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent ], presence: {activities: [{name: "You (ㅇㅅㅇ❀)",type: ActivityType.Listening,},],status: 'idle',},});
 const { generationConfig, safetySettings } = require('./config.js'); 
 const genAI = new GoogleGenerativeAI(process.env.AIAPIKEY); 
 const { chatHistory, history } = require("./history.js");
