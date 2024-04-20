@@ -8,6 +8,7 @@ const { chatHistory, rawHistory } = require("./history.js");
 const https = require('https');
 const path = require('path');
 const fs = require('fs');
+const ChannelId = '1230804584235274291';
 client.once('ready', () => {console.log("\x1b[33m%s\x1b[0m", `Logged in sebagai ${client.user.tag}, Menunggu Prompt @Rainy...`);});
 let listening = false; let channelId; let chatTimeout;
 function fileToGenerativePart(path, mimeType) {
@@ -20,9 +21,9 @@ function fileToGenerativePart(path, mimeType) {
 }
 client.on('messageCreate', async (message) => {
     if (message.author.bot) return;
-    if (message.mentions.has(client.user) && !message.mentions.everyone) {
+    if (message.type != 'REPLY' && message.mentions.has(client.user) && !message.mentions.everyone || message.channel.id === ChannelId && message.type != 'REPLY' && !message.mentions.everyone) {
         channelId = message.channel.id;
-        if (message.content.toLowerCase().includes('bye-bye')) {
+        if (message.content.toLowerCase().includes('bye bye')) {
             listening = false; 
             clearTimeout(chatTimeout); 
             console.log("\x1b[33m%s\x1b[0m", "Respon Dihentikan, Menunggu Prompt @Rainy...");
@@ -90,7 +91,6 @@ client.on('messageCreate', async (message) => {
                     let response = await result.response;
                     console.log(`Respon Dibuat: ${response.text()}`);
                     chatHistory.push({ role: "model", parts: await response.text() });
-                    console.log(history);
                     if (response.text().trim() !== '') {
                         reply = await client.channels.cache.get(channelId).send(response.text());
                     } else {reply = await client.channels.cache.get(channelId).send('...');}
@@ -108,20 +108,22 @@ client.on('messageCreate', async (message) => {
                 let response = await result.response;
                 console.log(`Respon Dibuat: ${response.text()}`);
                 chatHistory.push({ role: "model", parts: await response.text() });
-                console.log(history);
                 if (response.text().trim() !== '') {
                     reply = await client.channels.cache.get(channelId).send(response.text());
                 } else {reply = await client.channels.cache.get(channelId).send('...');}
             }
+            if (message.channel.id === ChannelId) {return}
+            else {
             function setNewTimeout() {
                 if (chatTimeout) {clearTimeout(chatTimeout);}
                 chatTimeout = setTimeout(() => {
                     console.log("\x1b[33m%s\x1b[0m", "Timeout Tercapai, Respon dihentikan, Menunggu Prompt...");
                     reply.react('⏰');
                     listening = false;
-                }, 20000);
+                }, 10000);
             }
             setNewTimeout();
+            }
         } catch (error) {
             message.react('❌');
             console.error('Error:', error);
@@ -139,5 +141,4 @@ client.on('messageCreate', async (message) => {
         }
     }
 });
-
 client.login(process.env.DSCTOKEN);
