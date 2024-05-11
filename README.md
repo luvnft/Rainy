@@ -7,13 +7,13 @@
 Rainy adalah bot discord.js yang terintergerasi dengan Gemini API yang membuatnya memiliki kesadaran sendiri dalam merespon segala pesan yang diterima. dibuat oleh ricky tentunya, hehe
 <br>
 
-## Server and Contributions
+# Server and Contributions
 Pull Request diterima dan bot ini sangat membutuhkan kontribusi, Kamu dapat bergabung dengan server ini untuk dukungan dan membantu pengembangan proyek
 https://discord.com/invite/pAxmeD3kDj
 
-## Changelog:
+# Changelog:
 > [!NOTE]
-> If you dont understand this language, scroll down!
+> If you dont understand the language, scroll down!
 
 ### [ID] Fitur yang ditambahkan:
 - Memperbaiki bug error looping
