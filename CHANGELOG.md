@@ -15,5 +15,6 @@ Ini adalah perjalanan Rainy dari 4 Maret 2024 hingga saat ini, aku selalu mencat
 
 # v1.0 (4 Mar 2024)
 - Commits pertama
-- Menambahkan ping comand
-- Menambahkan ingatan kepribadian awal
+- Riwayat pesan, membuat rainy mengetaui context pembicaraan
+- Nama lawan bicara, membuat rainy mengetahui siapa yang ia ajak bicara
+- Personality, menambahkan sikap personality ke history, bukan fine tuning!
