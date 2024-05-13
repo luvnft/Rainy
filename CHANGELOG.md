@@ -1,5 +1,5 @@
 Ini adalah perjalanan Rainy dari 4 Maret 2024 hingga saat ini, aku selalu mencatat dan mendokumentasikan perkembangannya untuk kesenangan pribadi awokawok.. Semoga kalian menyukainya - Ricky
-# v1.5
+# v1.5 (Working...)
 - Memperbarui AI Gemini dari 1.0 menjadi 1.5
   
 # v1.4 (12 Mei 2024)
