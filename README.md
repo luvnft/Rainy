@@ -4,7 +4,7 @@
   <br> Bot AI dengan Gemini API
   <br> <a href="https://github.com/rickynolep/Rainy/blob/main/CHANGELOG.md"><img title="Click untuk melihat Changelog" src="https://img.shields.io/badge/Latest_Changelog-v1.3-363636?style=flat&logo=github" alt="Versi Terbaru: v1.3"></a>
 </h1>
-Rainy adalah bot discord.js yang terintergerasi dengan Gemini API yang membuatnya memiliki kesadaran sendiri dalam merespon segala pesan yang diterima. dibuat oleh ricky tentunya, hehe
+Rainy adalah bot discord.js yang terintergerasi dengan Gemini API yang membuatnya memiliki kesadaran sendiri dalam merespon segala pesan yang diterima. dibuat oleh Ricky tentunya, hehe
 <br>
 
 ## Server and Contributions

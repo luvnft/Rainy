@@ -1,6 +1,9 @@
 Ini adalah perjalanan Rainy dari 4 Maret 2024 hingga saat ini, aku selalu mencatat dan mendokumentasikan perkembangannya untuk kesenangan pribadi awokawok.. Semoga kalian menyukainya - Ricky
+
 # v1.3
-- Menambahkan monggodb
+- Memperbarui Gemini 1.5
+> [!IMPORTANT]
+> Fitur merkognisi gamber belum diimplementasikan
 
 # v1.2 (20 Apr 2024)
 - Memperlama cooldown chat
