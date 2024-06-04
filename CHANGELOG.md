@@ -1,9 +1,16 @@
 Ini adalah perjalanan Rainy dari 4 Maret 2024 hingga saat ini, aku selalu mencatat dan mendokumentasikan perkembangannya untuk kesenangan pribadi awokawok.. Semoga kalian menyukainya - Ricky
-
-# v1.3
-- Memperbarui Gemini 1.5
+# v1.5 (4 Juni 2024)
+- Memperbarui AI Gemini dari 1.0 menjadi 1.5
 > [!IMPORTANT]
-> Fitur merkognisi gamber belum diimplementasikan
+> Fitur merkognisi gamber belum diimplementasik
+
+# v1.4 (12 Mei 2024)
+- Memperbarui Google API
+- Memperbaiki bug dimana Rainy terdiam beberapa saat
+- Memperbaiki slow respond
+  
+# v1.3 (10 Mei 2024)
+- Menambahkan Reply functions
 
 # v1.2 (20 Apr 2024)
 - Memperlama cooldown chat
@@ -18,5 +25,6 @@ Ini adalah perjalanan Rainy dari 4 Maret 2024 hingga saat ini, aku selalu mencat
 
 # v1.0 (4 Mar 2024)
 - Commits pertama
-- Menambahkan ping comand
-- Menambahkan ingatan kepribadian awal
+- Riwayat pesan, membuat rainy mengetaui context pembicaraan
+- Nama lawan bicara, membuat rainy mengetahui siapa yang ia ajak bicara
+- Personality, menambahkan sikap personality ke history, bukan fine tuning!
