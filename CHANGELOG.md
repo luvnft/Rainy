@@ -2,7 +2,7 @@ Ini adalah perjalanan Rainy dari 4 Maret 2024 hingga saat ini, aku selalu mencat
 # v1.5 (4 Juni 2024)
 - Memperbarui AI Gemini dari 1.0 menjadi 1.5
 > [!IMPORTANT]
-> Fitur merkognisi gamber belum diimplementasik
+> Fitur merkognisi gambar belum diimplementasi
 
 # v1.4 (12 Mei 2024)
 - Memperbarui Google API
