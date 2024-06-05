@@ -15,7 +15,7 @@ const genAI = new GoogleGenerativeAI(process.env.APIKEY);
 client.once('ready', () => { console.log("\x1b[33m%s\x1b[0m", `Logged in sebagai ${client.user.tag}, Menunggu Prompt @Rainy...`) });
 client.on('messageCreate', async (message) => {
     if (message.author.bot) return;
-    if (message.channel.id === ChannelId || message.mentions.has(client.user) && !message.mentions.everyone) {
+    if (ChannelId.includes(message.channel.id) || message.mentions.has(client.user) && !message.mentions.everyone) {
         channelId = message.channel.id;
         try {
             await message.channel.sendTyping();
@@ -46,16 +46,10 @@ client.on('messageCreate', async (message) => {
             });
 
             const result = await chatSession.sendMessage(prompt);
-            console.log(`Respond Dibuat: ${result.response.text()}`)
+            console.log(`Respond Dibuat: ${result.response.text().trim()}`)
             history.push({ role: "user", parts: [{ text: prompt }] });
-
-            if (result.response.text() !== '') {
-                reply = await client.channels.cache.get(channelId).send(result.response.text());
-            } else {
-                reply = await client.channels.cache.get(channelId).send('...');
-            }
-
-            history.push({ role: "model", parts: [{ text: result.response.text() }] });
+            reply = await message.reply({ content: result.response.text().trim(), allowedMentions: { repliedUser: false }});
+            history.push({ role: "model", parts: [{ text: result.response.text().trim() }] });
         } catch (error) {
             message.react('❌');
             if (error.message.includes('blocked due to SAFETY')) {
